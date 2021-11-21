@@ -1,0 +1,14 @@
+
+4000:	   LXI SP,4100
+	   LXI H,4031
+	   MVI C,0A
+	   LDA 4030
+
+VOLTA:	   CMP M
+	   JC PULA
+	   MOV A,M
+
+PULA:	   INX H
+	   DCR C
+	   JNZ VOLTA
+	   HLT

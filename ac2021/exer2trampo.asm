@@ -1,0 +1,10 @@
+	   LXI H,0000
+	   LXI D,0001
+	   MVI A,00
+	   MVI C,03
+
+VOLTA:	   ADI 04
+	   DCR C
+	   JNZ VOLTA
+	   SHLD B01A
+	   HLT
